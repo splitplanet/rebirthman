@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout 
+	    android:id="@+id/RelativeLayout1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/TextView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:gravity="center"
+	        android:text="@string/hello" />
+	
+	
+	    <Button
+	        android:id="@+id/EditJobDetails"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/TextView1"
+	        android:layout_centerHorizontal="true"
+	        android:layout_gravity="center"
+	        android:layout_margin="25dp"
+	        android:text="@string/EditString" />
+	
+	    <Button
+	        android:id="@+id/AddToJob"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/EditJobDetails"
+	        android:layout_margin="25dp"
+	        android:text="@string/AddString" />
+	
+	    <Button
+	        android:id="@+id/JobItem"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/AddToJob"
+	        android:layout_centerHorizontal="true"
+	        android:layout_gravity="center"
+	        android:layout_margin="25dp"
+	        android:text="@string/JobItem" />
+	    
+	    
+	        <Button
+	        android:id="@+id/JobDetailView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/JobItem"
+	        android:layout_centerHorizontal="true"
+	        android:layout_gravity="center"
+	        android:layout_margin="25dp"
+	        android:text="Job Invoice" />
+	
+	    <TextView
+	        android:id="@+id/exampletextview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/JobItem"
+	        android:gravity="center"
+	        android:text="This is our example textview" />
+	
+	</RelativeLayout>
+</ScrollView>

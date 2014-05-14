@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to the work recorder</string>
+    <string name="CreateString">Create job</string>
+    <string name="EditString">Edit job</string>
+    <string name="AddString">Add to job</string>
+    <string name="app_name">Work_Recorder</string>
+    <string name="Home">Home</string>
+    
+    <string name="String_Jobname">Job name</string>
+    <string name="String_Location">Job Location</string>
+    <string name="String_Customer">Customer please choose</string>
+    <string name="String_Description">Job description</string>
+    <string name="String_Add_job">Add Job</string>
+    <string name="String_JobItemName">Enter Job Item Name</string>
+    <string name="String_Item_desc">Job Item Description</string>
+    
+    <string name="Edit">Edit Job</string>
+    <string name="locationString">G P S</string>
+    <string name="Delete">Delete Job</string>
+    <string name="Create_job">Create Job</string>
+    
+    <string name="Create_item">Create Job Item</string>
+    <string name="Edit_item">Edit Job Item</string>
+	<string name="Delete_item">Delete Job Item</string>
+	<string name="JobItem">Create and edit Job Items</string>
+	<string name="String_JobItemPrice">Price</string>
+	
+	<string name="String_JobAdd_jobname">Job name</string>
+	<string name="String_JobAdd_itemname">Item name</string>
+	<string name="String_JobAdd_AddToJob">Add To Job</string>
+	<color name="blue">#0000FF</color>
+
+
+</resources>

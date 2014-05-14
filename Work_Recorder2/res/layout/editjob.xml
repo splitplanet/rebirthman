@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+	<RelativeLayout
+	    android:id="@+id/RelativeLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="top"
+	    android:orientation="vertical" >
+	
+	    <Button
+	        android:id="@+id/Home"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/Home" />
+
+	    <TextView
+	        android:id="@+id/editJob_TV_JobNam"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/Home"
+	        android:text="Job name"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20px" />
+	    
+	    <Spinner
+	        android:id="@+id/editjobspinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/editJob_TV_JobNam" />
+	
+
+	
+	    <EditText
+	        android:id="@+id/editJob_ET_JobName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/editjobspinner"
+	        android:ems="10" />
+	
+	    <TextView
+	        android:id="@+id/ed_textView4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/editJob_ET_JobName"
+	        android:text="@string/String_Customer"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20px" />
+	
+	    <Spinner
+	        android:id="@+id/ed_spinner1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ed_textView4" />
+	
+	    <TextView
+	        android:id="@+id/ed_textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ed_spinner1"
+	        android:text="@string/String_Location"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20px" />
+	
+	    <EditText
+	        android:id="@+id/ed_Location"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ed_textView2"
+	        android:ems="10" />
+	
+	    <TextView
+	        android:id="@+id/ed_text_Labour"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ed_Location"
+	        android:text="Labour price"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20px" />
+	
+	    <EditText
+	        android:id="@+id/editLabourPrice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/ed_text_Labour"
+	        android:ems="10"
+	        android:inputType="numberDecimal" />
+	
+	    <TextView
+	        android:id="@+id/ed_textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/editLabourPrice"
+	        android:text="@string/String_Description"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20px" />
+	
+	    <EditText
+	        android:id="@+id/editJob_desc"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ed_textView3"
+	        android:ems="10"
+	        android:inputType="textImeMultiLine"
+	        android:lines="2" />
+	    
+	    
+		<LinearLayout  
+		    android:layout_height="wrap_content"  
+		    android:layout_width="fill_parent" 
+		    android:gravity="left"
+		    android:layout_below="@+id/editJob_desc"
+		    android:id="@+id/loginButtonLayout2"
+		    android:weightSum="1.0">
+		    
+			    <Button
+			        android:id="@+id/Edit"
+			        android:layout_width="0dip"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.5"
+			        android:text="@string/Edit" />
+			    
+			    <Button
+			        android:id="@+id/Delete"
+			        android:layout_width="0dip"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.5"
+			        android:text="@string/Delete" />
+		    	
+		    
+		</LinearLayout>
+	
+		<LinearLayout  
+		    android:layout_height="wrap_content"  
+		    android:layout_width="fill_parent" 
+		    android:gravity="left"
+		    android:layout_below="@+id/loginButtonLayout2"
+		    android:id="@+id/loginButtonLayout"
+		    android:weightSum="1.0">  
+		    
+			    <Button
+			        android:layout_width="0dip"
+			        android:id="@+id/editJob_B_Create"
+			        android:layout_height="wrap_content"
+			        android:text="@string/Create_job"
+			        android:layout_weight="1"
+		        />
+			    
+			    
+	
+		    
+		</LinearLayout>
+		
+	
+	</RelativeLayout>
+	
+	
+</ScrollView>

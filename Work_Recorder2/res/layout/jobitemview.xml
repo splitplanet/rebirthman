@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout 
+	    android:id="@+id/RelativeLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/TextView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:gravity="center"
+	        android:text="@string/hello" />
+	
+	    <Button
+	        android:id="@+id/Home"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/TextView1"
+	        android:layout_centerHorizontal="true"
+	        android:layout_gravity="center"
+	        android:text="@string/Home" />
+	
+	    <Spinner
+	        android:id="@+id/editjobspinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/Home" />
+	
+	    <!-- THIS IS A EDIT BUTTON -->
+	
+	
+	    <!-- THIS IS A DELETE BUTTON -->
+	
+	    <TextView
+	        android:id="@+id/JobItemName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/editjobspinner"
+	        android:text="@string/String_JobItemName"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/Item_Name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/JobItemName"
+	        android:ems="10" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <TextView
+	        android:id="@+id/ed_textView4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/Item_Name"
+	        android:text="@string/String_Item_desc"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/JobItemFullDesc"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/ed_textView4" />
+	
+	    <TextView
+	        android:id="@+id/TextPrice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/JobItemFullDesc"
+	        android:text="@string/String_JobItemPrice"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/editPrice"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/TextPrice"
+	        android:inputType="numberDecimal" />
+	
+		<LinearLayout  
+		    android:layout_height="wrap_content"  
+		    android:layout_width="fill_parent" 
+		    android:gravity="left"
+		    android:layout_below="@+id/editPrice"
+		    android:id="@+id/linear1"
+		    android:weightSum="1.0">
+			    <Button
+			        android:id="@+id/JobItemReview_B_Edit"
+			        android:layout_width="0dip"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.5"
+			        android:text="@string/Edit_item" />
+			
+				<Button
+			        android:id="@+id/Delete"
+			        android:layout_width="0dip"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.5"
+			        android:text="@string/Delete_item" />
+	    </LinearLayout>
+		    
+	    <Button
+	        android:id="@+id/Create"
+	        android:layout_width="154dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/linear1"
+	        android:text="@string/Create_item" />
+	
+
+	
+	</RelativeLayout>
+</ScrollView>

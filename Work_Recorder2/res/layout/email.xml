@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/email_tv_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Choose Email Address" />
+
+    <LinearLayout
+        android:id="@+id/email_ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:weightSum="1.0" >
+		    
+	    <EditText
+	        android:id="@+id/email_et_manual_email"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.7"
+	        android:ems="10"
+	        android:inputType="textEmailAddress" />
+			    
+		<Button
+			android:id="@+id/email_bu_add_manual"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+	        android:layout_weight="0.3"
+	        android:text="Add Email" />
+		    	
+		    
+		</LinearLayout>
+		
+        <LinearLayout
+        android:id="@+id/email_ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:weightSum="1.0" >
+
+        <Spinner
+	        android:id="@+id/email_sp_emails"
+	        android:layout_weight="0.7"
+			android:layout_width="0dip"
+	        android:layout_height="match_parent"/>
+			    
+		<Button
+			android:id="@+id/email_bu_add_spinner"
+			android:layout_width="0dip"
+			android:layout_height="match_parent"
+	        android:layout_weight="0.3"
+	        android:text="Add Email" />
+		    	
+		    
+		</LinearLayout>
+
+       <LinearLayout
+        android:id="@+id/email_ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="left"
+        android:weightSum="1.0"
+         android:layout_weight="1.0" >
+        
+	        <ListView
+	        android:id="@+id/email_li_emails_to_send_to"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.7"
+	        android:choiceMode="singleChoice"
+	        />
+	        
+	        <Button
+	            android:id="@+id/email_bu_remove_from_list"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            android:layout_weight="0.30"
+	            android:text="Remove Email" />
+        
+        </LinearLayout>
+
+        <TextView
+	        android:id="@+id/email_tv_add_subject"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Subject" />
+        
+        <EditText
+	        android:id="@+id/email_et_subject"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:ems="10" />
+        
+        <Button
+			android:id="@+id/email_bu_Send_email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	        android:text="Send Email" />
+        
+         <Button
+			android:id="@+id/email_bu_back"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	        android:text="Back" />
+         
+  
+</LinearLayout>
+
